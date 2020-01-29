@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -14,49 +16,52 @@
 
     <!-- Custom styles for this template -->
     <link href="static/style.css" rel="stylesheet">
-	<link href="static/fontawesome.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="static/fontawesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Muli|Roboto&display=swap" rel="stylesheet">
+</head>
 
-  </head>
+<body>
 
-  <body class="font-roboto">
-
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="index.html">DOMVS * MINECRAFT</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top font-muli">
+        <a class="navbar-brand" href="index.html">DOMVS * MINECRAFT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="rules.html">Rules</a>
-		  </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://map.domvs.org">Dynmap</a>
-		  </li>
-        </ul>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rules.html">Rules</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://map.domvs.org">Dynmap</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <main role="main" class="container">
+    <main role="main" class="container font-muli cgray">
 
-      <div class="starter-template">
-        <h1 class="font-walsheim">DOMVS * MINECRAFT</h1>
-        <p class="lead">Hello and welcome to Domvs Minecraft.
-          <br><br>Current player count: <span id="playercount"></span>
-          <br><br>This website is still under development so excuse the simpleness.<br>This page has general information about Domvs minecraft.<br> The rules can be found in the 'Rules' tab.<br><br>The IP to join is play.domvs.org and the version is Minecraft Java 1.15.2<br><br> The Discord invite is <a href="https://discord.gg/TArpNMB">here.</a><br> Ping one @elwolf6 for the minecraft rank.</p>
-      </div>
+        <div class="domvs">
+            <h1 class="font-cabin-bold cgray2">DOMVS * MINECRAFT</h1>
+            <p class="lead">Hello and welcome to Domvs Minecraft.
+                <br><br>Current player count: <span id="playercount"></span>
+                <br><br>This website is still under development so excuse the simpleness.<br>This page has general information about Domvs minecraft.<br> The rules can be found in the 'Rules' tab.<br><br>The IP to join is play.domvs.org and the version is Minecraft Java 1.15.2<br><br> The Discord invite is <a href="https://discord.gg/TArpNMB">here.</a><br> Ping one @elwolf6 for the minecraft rank.</p>
+        </div>
 
-    </main><!-- /.container -->
-	
-    <footer class="footer fixed-bottom navbar-dark bg-dark">
-      <div class="container">
-        <span class="text-white">@2020 Domvs Minecraft.</span>
-      </div>
+    </main>
+    <!-- /.container -->
+    <footer class="fixed-bottom">
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li class="malke font-muli">@2020 Domvs Minecraft</li>
+                </ul>
+            </nav>
+        </div>
     </footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -65,19 +70,21 @@
     <script src="static/popper.js"></script>
     <script src="static/bootstrap.js"></script>
     <script>
-      $('#playercount').html('<i class="fas fa-spinner fa-spin"></i>');
-
-      $.ajax({
-        type: "GET",
-        url: 'https://domvs.org/api/GetPlayerCount',
-        success: function(data)
-        {
-          $('#playercount').html(data);
-        },
-        error: function (request, status, error) {
-          $('#playercount').html('<i class="fas fa-dumpster-fire fa-spin"></i> (Server is offline!)');
-        }
-      });
+        $('#playercount').html('<i class="fas fa-spinner fa-spin"></i>');
+    
+          $.ajax({
+            type: "GET",
+            url: 'https://domvs.org/api/GetPlayerCount',
+            success: function(data)
+            {
+              $('#playercount').html(data);
+            },
+            error: function (request, status, error) {
+              $('#playercount').html('<i class="fas fa-dumpster-fire fa-spin"></i> (Server is offline!)');
+            }
+          });
     </script>
 
-</body></html>
+</body>
+
+</html>
