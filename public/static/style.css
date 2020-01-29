@@ -5,3 +5,12 @@ body {
   padding: 3rem 1.5rem;
   text-align: center;
 }
+
+.font-roboto{
+	font-family:Roboto
+}
+
+.font-roboto-bold{
+	font-family:Roboto;
+	font-style: bold;
+}
