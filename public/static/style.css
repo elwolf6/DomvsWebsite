@@ -1,42 +1,42 @@
 body {
      padding-top: 5rem;
 }
-.mvndi {
+ .domvs {
      padding: 3rem 1.5rem;
      text-align: center;
 }
-.font-roboto{
+ .font-roboto{
      font-family:Roboto,sans-serif;
 }
-.font-cabin{
+ .font-cabin{
      font-family:Cabin,sans-serif;
      font-size: 1.125rem;
 }
-.font-muli{
+ .font-muli{
      font-family:Muli,sans-serif;
      font-size: 16px;
 }
-.cgray{
+ .cgray{
      color: #5c5c5c;
 }
-.font-cabin-bold{
+ .font-cabin-bold{
      font-family:Cabin,sans-serif;
      font-weight: 700;
      font-size: 3rem;
 }
-.cgray2{
+ .cgray2{
      color: #30353e;
 }
-footer {
+ footer {
      width: 100%;
      background-color: #343a40;
 }
-footer nav ul li{
+ footer nav ul li{
      display: inline-block;
      margin-left: 20px;
      list-style: none;
 }
-li.malke{
+ li.malke{
      color: white;
      padding: 5px;
 }
