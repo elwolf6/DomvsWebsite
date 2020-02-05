@@ -37,7 +37,7 @@
                     <a class="nav-link" href="rules.html">Rules</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://map.domvs.org">Dynmap</a>
+                    <a class="nav-link" href="https://map.domvs-mc.net">Dynmap</a>
                 </li>
             </ul>
         </div>
@@ -49,7 +49,7 @@
             <h1 class="font-cabin-bold cgray2">DOMVS * MINECRAFT</h1>
             <p class="lead">Hello and welcome to Domvs Minecraft.
                 <br><br>Current player count: <span id="playercount"></span>
-                <br><br>This website is still under development so excuse the simpleness.<br>This page has general information about Domvs minecraft.<br> The rules can be found in the 'Rules' tab.<br><br>The IP to join is play.domvs.org and the version is Minecraft Java 1.15.2<br><br> The Discord invite is <a href="https://discord.gg/mCGAXCa">here.</a><br> Ping one @elwolf6 for the minecraft rank.</p>
+                <br><br>This website is still under development so excuse the simpleness.<br>This page has general information about Domvs minecraft.<br> The rules can be found in the 'Rules' tab.<br><br>The IP to join is play.domvs-mc.net and the version is Minecraft Java 1.15.2<br><br> The Discord invite is <a href="https://discord.gg/mCGAXCa">here.</a><br> Ping one @elwolf6 for the minecraft rank.</p>
         </div>
 
     </main>
@@ -74,7 +74,7 @@
     
           $.ajax({
             type: "GET",
-            url: 'https://domvs.org/api/GetPlayerCount',
+            url: 'https://domvs-mc.net/api/GetPlayerCount',
             success: function(data)
             {
               $('#playercount').html(data);
