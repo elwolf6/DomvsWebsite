@@ -16,27 +16,22 @@ body {
      font-family:Muli,sans-serif;
      font-size: 16px;
 }
- .cgray{
-     color: #5c5c5c;
-}
  .font-cabin-bold{
      font-family:Cabin,sans-serif;
      font-weight: 700;
      font-size: 3rem;
 }
- .cgray2{
+ .font-muli-bold{
+     font-family:Muli,sans-serif;
+	 font-weight: 700;
+}
+.cgray{
+     color: #5c5c5c;
+}
+.cgray2{
      color: #30353e;
 }
  footer {
      width: 100%;
      background-color: #343a40;
-}
- footer nav ul li{
-     display: inline-block;
-     margin-left: 20px;
-     list-style: none;
-}
- li.malke{
-     color: white;
-     padding: 5px;
 }
